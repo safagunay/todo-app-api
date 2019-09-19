@@ -1,0 +1,14 @@
+{
+	"version": 2,
+	"name": "todoapp-api",
+	"env": {
+		"MONGODB_URI": "@mongodb_uri"
+	},
+	"builds": [ { "src": "server.js", "use": "@now/node-server" } ],
+	"routes": [
+		{
+			"src": "/(.*)",
+			"dest": "server.js"
+		}
+	]
+}
